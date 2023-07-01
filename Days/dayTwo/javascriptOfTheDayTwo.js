@@ -159,25 +159,87 @@ function q25() {
 // level 2
 
 // Using console.log() print out the following statement:
-
 // The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.
-// Using console.log() print out the following quote by Mother Teresa:
 
+let sentence1 = 'The quote \'There is no exercise better for the heart than reaching down and lifting people up.\' by John Holmes teaches us to help one another.';
+
+function q_1(){
+    console.log(sentence1);
+}
+
+// Using console.log() print out the following quote by Mother Teresa:
 // "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
+
+let teresaSentence = ' \"Love is not patronizing and charity isn \'t about pity, it is about love. Charity and love are the same -- with charity you give love, so don\'t just give money but reach out your hand instead."';
+
+function q_2(){
+    console.log(teresaSentence);
+}
+
 // Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
+
+let numberTen = 10 , stringTen = '10', stringToNumber;
+
+function q_3 (){
+    console.log(parseInt(stringTen));
+    stringToNumber = parseInt(stringTen) ;
+}
+
+function q_3_5 () {
+    console.log(numberTen === stringToNumber);
+}
+
 
 // Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
 
+let num98 = parseFloat('9.8');
+function q_4 (){
+console.log(num98);
+num98 = Math.ceil(num98);
+console.log(num98 === 10);
+num98 = parseFloat('9.8');
+}
+
+
 // Check if 'on' is found in both python and jargon
+let pythonString = 'Pyt', jargonString ='jargon';
+
+function q_5 (){
+    if ( (pythonString.matchAll('on') != null) && (jargonString.matchAll('on') != null) ) {
+        console.log('on retrouve\'on \' dans jargon et python');
+    }
+    else {
+        console.log('on ne retrouve pas \'on\' dans python et jargon');
+    }
+}
 
 // I hope this course is not full of jargon. Check if jargon is in the sentence.
+let sentenceJargon = 'I hope this course is not full of jargon';
+
+function q_6 (){
+    if (sentenceJargon.matchAll('on') != null ){
+        console.log('jargon is in the sentence');
+
+    }
+    else {
+        console.log('jargon is not in the sentence');
+    }
+}
 
 // Generate a random number between 0 and 100 inclusively.
+function q_7 (){
+    let randomnumber = Math.floor(Math.random()*101);
+console.log(randomnumber)
+}
 
 // Generate a random number between 50 and 100 inclusively.
-
+function q_8 (){
+ console.log(50 + Math.floor(Math.random()*51));
+}
 // Generate a random number between 0 and 255 inclusively.
-
+function q_9 (){
+    console.log(Math.floor(Math.random()*256));
+   }
 // Access the 'JavaScript' string characters using a random number.
 
 // Use console.log() and escape characters to print the following pattern.
@@ -187,10 +249,18 @@ function q25() {
 // 3 1 3 9 27
 // 4 1 4 16 64
 // 5 1 5 25 125
-// Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'
 
+function q_9 (){
+    console.log ('1 1 1 1 1\n2 1 2 4 8\n3 1 3 9 27\n4 1 4 16 64\n5 1 5 25 125')
+   }
+
+// Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'
+function q_10 (){
+    console.log(becauseString.substr(31,23))
+}
 // Exercises: Level 3
-// 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
+// 'Love is the best thing in this world. Some found their love and some are still 
+//  looking for their love.' Count the number of word love in this sentence.
 
 // Use match() to count the number of all because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
 
