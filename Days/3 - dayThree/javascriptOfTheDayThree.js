@@ -67,12 +67,50 @@ console.log (4 === '4');
 // Use the Date object to do the following activities
 
 // What is the year today?
+
+function q4 (){
+    const now = new Date();
+    
+    console.log(now.getFullYear());
+}
 // What is the month today as a number?
+function q5 (){
+    const now = new Date();
+    
+    console.log(1 + now.getMonth());
+}
 // What is the date today?
+function q6 (){
+    const now = new Date();
+    
+    console.log(now.getDate());
+}
+
 // What is the day today as a number?
+function q7 (){
+    const now = new Date();
+    
+    console.log(now.getDay());
+}
 // What is the hours now?
+function q8 (){
+    const now = new Date();
+    
+    console.log(now.getHours());
+}
 // What is the minutes now?
+function q9 (){
+    const now = new Date();
+    
+    console.log(now.getMinutes());
+}
 // Find out the numbers of seconds elapsed from January 1, 1970 to now.
+function q10 (){
+    const now = new Date();
+    
+    console.log(now.getTime());
+}
+
 // Exercises: Level 2
 // Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
 
