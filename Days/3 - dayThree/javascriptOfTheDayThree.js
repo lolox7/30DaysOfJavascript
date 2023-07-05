@@ -112,13 +112,23 @@ function q10 (){
 }
 
 // Exercises: Level 2
-// Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
-
-// Enter base: 20
+// Write a script that prompt0 the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
+function q_1 (){
+    let base = prompt('')
+    let height = prompt('rentrez la hauteur de votre triangle ici')
+    console.log(0.5 * base * height);
+}
+    // Enter base: 20
 // Enter height: 10
 // The area of the triangle is 100
 // Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
 
+function q_2 (){
+    let a  = prompt('')
+    let b = prompt('rentrez la hauteur de votre triangle ici')
+    let c = prompt('rentrez la hauteur de votre triangle ici', 'c\'est ici que l\'on retrouve')
+    console.log(parseInt(a) + parseInt(b) + parseInt(c));
+}
 // Enter side a: 5
 // Enter side b: 4
 // Enter side c: 3
@@ -126,7 +136,11 @@ function q10 (){
 // Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
 
 // Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
-
+function q_3 (){
+    let pi = Math.PI;
+    let rayon = parseInt(prompt('rentrez le rayon ici'));
+    console.log( pi * rayon * rayon  );
+}
 // Calculate the slope, x-intercept and y-intercept of y = 2x -2
 
 // Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
