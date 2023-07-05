@@ -139,11 +139,11 @@ function q_2 (){
 function q_3 (){
     let pi = Math.PI;
     let rayon = parseInt(prompt('rentrez le rayon ici'));
-    console.log( pi * rayon * rayon  );
+    console.log( pi * rayon * rayon   );
 }
 // Calculate the slope, x-intercept and y-intercept of y = 2x -2
 
-// Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
+// Slope is m =  (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
 
 // Compare the slope of above two questions.
 
