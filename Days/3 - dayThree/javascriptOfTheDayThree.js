@@ -53,6 +53,10 @@ console.log (4 === '4');
 // Find the length of python and jargon and make a falsy comparison statement.
 // Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
 
+let testvar = 0;
+function q4 () {
+    console.log((testvar == true) ? 'true' : 'false' )
+}
 // 4 > 3 && 10 < 12
 // 4 > 3 && 10 > 12
 // 4 > 3 || 10 < 12
