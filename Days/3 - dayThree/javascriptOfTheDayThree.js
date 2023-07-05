@@ -71,20 +71,68 @@ function q4 () {
 // Use the Date object to do the following activities
 
 // What is the year today?
-// What is the month today as a number?
-// What is the date today?
-// What is the day today as a number?
-// What is the hours now?
-// What is the minutes now?
-// Find out the numbers of seconds elapsed from January 1, 1970 to now.
-// Exercises: Level 2
-// Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
 
-// Enter base: 20
+function q4 (){
+    const now = new Date();
+    
+    console.log(now.getFullYear());
+}
+// What is the month today as a number?
+function q5 (){
+    const now = new Date();
+    
+    console.log(1 + now.getMonth());
+}
+// What is the date today?
+function q6 (){
+    const now = new Date();
+    
+    console.log(now.getDate());
+}
+
+// What is the day today as a number?
+function q7 (){
+    const now = new Date();
+    
+    console.log(now.getDay());
+}
+// What is the hours now?
+function q8 (){
+    const now = new Date();
+    
+    console.log(now.getHours());
+}
+// What is the minutes now?
+function q9 (){
+    const now = new Date();
+    
+    console.log(now.getMinutes());
+}
+// Find out the numbers of seconds elapsed from January 1, 1970 to now.
+function q10 (){
+    const now = new Date();
+    
+    console.log(now.getTime());
+}
+
+// Exercises: Level 2
+// Write a script that prompt0 the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
+function q_1 (){
+    let base = prompt('')
+    let height = prompt('rentrez la hauteur de votre triangle ici')
+    console.log(0.5 * base * height);
+}
+    // Enter base: 20
 // Enter height: 10
 // The area of the triangle is 100
 // Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
 
+function q_2 (){
+    let a  = prompt('')
+    let b = prompt('rentrez la hauteur de votre triangle ici')
+    let c = prompt('rentrez la hauteur de votre triangle ici', 'c\'est ici que l\'on retrouve')
+    console.log(parseInt(a) + parseInt(b) + parseInt(c));
+}
 // Enter side a: 5
 // Enter side b: 4
 // Enter side c: 3
@@ -92,10 +140,14 @@ function q4 () {
 // Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
 
 // Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
-
+function q_3 (){
+    let pi = Math.PI;
+    let rayon = parseInt(prompt('rentrez le rayon ici'));
+    console.log( pi * rayon * rayon   );
+}
 // Calculate the slope, x-intercept and y-intercept of y = 2x -2
 
-// Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
+// Slope is m =  (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
 
 // Compare the slope of above two questions.
 
