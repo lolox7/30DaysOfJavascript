@@ -180,16 +180,18 @@ function q_2 () {
 function q_3 () {
     let Days31Month = ['janvier', 'mars','mai','juillet','aout','octobre','decembre'];
     let Days30Month = ['avril','juin','septembre','novembre'];
-    let day = prompt('entrer the day you want').toLowerCase();
+    let day = prompt('entrer the month where you want to know the numeber of days').toLowerCase();
 
-    if (workDays.includes(day)) {
-        console.log('day of work');
+    if (Days31Month.includes(day)) {
+        console.log('il y a 31 jours dans ce mois');
 
-    }else if (weekEnd.includes(day)) {
-        console.log('day of week end');
+    }else if (Days30Month.includes(day)) {
+        console.log('il y a 30 jours dans ce mois');
 
+    } else if (day == 'fevrier') {
+        console.log('28 DAYS FOR fevrier')
     } else {
-        console.log('its not a day of the week')
+        console.log('erreur')
     }
     
     }
