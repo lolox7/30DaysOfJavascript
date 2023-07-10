@@ -60,47 +60,110 @@ console.log(itCompanies.length);
 // Print the first company, middle and last company
 console.log(itCompanies[0]+' '+itCompanies[parseInt(itCompanies.length/2)]+ ' ' +itCompanies[itCompanies.length-1])
 // Print out each company
-let itCompaniescounter = 0;
-while (itCompaniescounter < itCompanies.length) {
-    console.log(itCompanies[itCompaniescounter]);
-    itCompaniescounter++;
+let itCompaniesCounter = 0;
+while (itCompaniesCounter < itCompanies.length) {
+    console.log(itCompanies[itCompaniesCounter]);
+    itCompaniesCounter++;
 } 
 // Change each company name to uppercase one by one and print them out
-itCompaniescounter = 0;
-while (itCompaniescounter < itCompanies.length) {
-    console.log(itCompanies[itCompaniescounter].toUpperCase());
-    itCompaniescounter++;
+itCompaniesCounter = 0;
+while (itCompaniesCounter < itCompanies.length) {
+    console.log(itCompanies[itCompaniesCounter].toUpperCase());
+    itCompaniesCounter++;
 } 
 // Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
 console.log(itCompanies[0]+', '+itCompanies[1]+', '+itCompanies[2]+', '+itCompanies[3]+', '+itCompanies[4]+', '+itCompanies[5]+'and '+itCompanies[6]+'are Big IT companies');
 // Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
-let certainCompany = prompt('enter the name of the entreprise');
-if (itCompanies.includes(certainCompany) == true ) {
-    console.log('il s\'agit d\'une grosse entreprise')
-} else {
-    console.log(`ce n'est pas une etreprise de la tech connue`)
-}
-// Filter out companies which have more than one 'o' without the filter method
-let itCompaniescounter
-while (){
+//let certainCompany = prompt('enter the name of the entreprise');
+// if (itCompanies.includes(certainCompany) == true ) {
+    //     console.log('il s\'agit d\'une grosse entreprise')
+    // } else {
+        //     console.log(`ce n'est pas une etreprise de la tech connue`)
+        // }
+        // Filter out companies which have more than one 'o' without the filter method
+        itCompaniesCounter = 0;
+        while (itCompaniesCounter < itCompanies.length) {
+            if (itCompanies[itCompaniesCounter].lastIndexOf('o') !== itCompanies[itCompaniesCounter].indexOf('o')){
+                console.log(`ne pas imprimer`+ itCompanies[itCompaniesCounter]);
+            } else {console.log(itCompanies[itCompaniesCounter])}
+            // console.log(itCompanies[itCompaniesCounter].toUpperCase());
+            itCompaniesCounter++;
+        } 
+        
+        
+// let charcount = 0;
+// let OCount
+// console.log(charcount);
+// function q1 () {
+//     itCompaniesCounter = 0;
+//     console.log('entrée dans la fonction');
+//     // console.log(itCompaniesCounter)
+//     // console.log('')
+//     while (itCompaniesCounter < itCompanies.length){
+//         console.log('entrée dans la première boucle');
+//         charcount = 0;
+//         console.log(charcount);
+//         while (charcount < itComp0anies[itCompaniesCounter].length){
 
-}
+// //            console.log(itCompanies[itCompaniesCounter].charAt(charcount))
+// //cela imprime dans la consle la lettre  
+// if (itCompanies[itCompaniesCounter].charAt(charcount) === 'o'||'O'){
+//                 OCount++
+
+
+//             }
+//             charcount++;
+//         }
+//         itCompaniesCounter++;
+//     }
+// }
+
+
+
 // Sort the array using sort() method
+console.log(itCompanies.sort());
 // Reverse the array using reverse() method
+console.log(itCompanies.reverse());
 // Slice out the first 3 companies from the array
+console.log(itCompanies.slice(0,3));
 // Slice out the last 3 companies from the array
+console.log(itCompanies.reverse().slice(0,3));
+
 // Slice out the middle IT company or companies from the array
+let middle = parseInt(itCompanies.length/2);
+console.log(middle);
+console.log(itCompanies.slice(0,3));
+// console.log(itCompanies[parseInt(itCompanies.length/2)]);
+
 // Remove the first IT company from the array
+itCompanies.shift();
 // Remove the middle IT company or companies from the array
+itCompanies.splice(middle, 1);
 // Remove the last IT company from the array
+itCompanies.pop();
 // Remove all IT companies
+itCompanies.splice();
 // Exercise: Level 2
 // Create a separate countries.js file and store the countries array in to this file, create a separate file web_techs.js and store the webTechs array in to this file. Access both file in main.js file
-
+console.log(countries.sort());
+console.log(webTechs.sort())
 // First remove all the punctuations and change the string to array and count the number of words in the array
 
-// let text =
-// 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+let texte = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.';
+console.log(texte.length);
+
+let letterCounter = 0 ;
+function qu2 () {    
+    
+    while ( letterCounter < texte.length) {
+        if(texte[letterCounter])
+//continuer en mettatn la création d'un tableauafin de verifier si il s'agot bien d'une lettre et non d'un elemet de pponctuation 
+
+        console.log(texte[letterCounter]);
+        letterCounter++;
+
+    }
+}
 // console.log(words)
 // console.log(words.length)
 // ["I", "love", "teaching", "and", "empowering", "people", "I", "teach", "HTML", "CSS", "JS", "React", "Python"]
