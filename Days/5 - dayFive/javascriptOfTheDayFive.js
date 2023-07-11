@@ -148,21 +148,33 @@ itCompanies.splice();
 console.log(countries.sort());
 console.log(webTechs.sort())
 // First remove all the punctuations and change the string to array and count the number of words in the array
+//continuer en mettatn la création d'un tableauafin de verifier si il s'agot bien d'une lettre et non d'un elemet de pponctuation 
 
 let texte = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.';
 console.log(texte.length);
 
 let letterCounter = 0 ;
+let punctuations = ['.',',']
+let newTexteArray = [];
 function qu2 () {    
     
     while ( letterCounter < texte.length) {
-        if(texte[letterCounter])
-//continuer en mettatn la création d'un tableauafin de verifier si il s'agot bien d'une lettre et non d'un elemet de pponctuation 
-
-        console.log(texte[letterCounter]);
-        letterCounter++;
-
+        if(punctuations.includes(texte[letterCounter]) === true){
+            letterCounter++;
+        } else {
+            newTexteArray.push(texte[letterCounter]);
+            letterCounter++;
+        }
+        
     }
+    newTexte = newTexteArray.toString();
+    console.log(newTexte);
+    newTexte = newTexteArray.join('');
+    console.log(typeof(newTexte));
+    console.log(newTexte);
+    endArray = newTexte.split(' ');
+    console.log(endArray.length);
+
 }
 // console.log(words)
 // console.log(words.length)
@@ -171,11 +183,26 @@ function qu2 () {
 // 13
 // In the following shopping cart add, remove, edit items
 
-// const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+console.log(shoppingCart);
+
 // add 'Meat' in the beginning of your shopping cart if it has not been already added
+shoppingCart.unshift('Meat');
+console.log(shoppingCart);
 // add Sugar at the end of you shopping cart if it has not been already added
+shoppingCart.push('Sugar')
+console.log(shoppingCart);
+
 // remove 'Honey' if you are allergic to honey
+let indexHoney = shoppingCart.lastIndexOf('Honey');
+shoppingCart.splice(indexHoney,1)
+console.log(shoppingCart);
+
 // modify Tea to 'Green Tea'
+let indexTea = shoppingCart.lastIndexOf('Tea');
+shoppingCart.splice(1,1,'Green Tea')
+console.log(shoppingCart);
+
 // In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
 
 // In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
