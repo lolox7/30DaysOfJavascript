@@ -204,14 +204,31 @@ shoppingCart.splice(1,1,'Green Tea')
 console.log(shoppingCart);
 
 // In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
-
+if (countries.includes('Ethiopia') === true ) {
+console.log('etipia is in the array');
+} else {
+console.log('ethiopia is not in the array');
+}
 // In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
+if (countries.includes('Sass') === true ) {
+    console.log('etipia is in the array');
+    } else {
+    webTechs.push('Sass');
+    console.log(webTechs);
+    }
 
+if (countries.includes('Sass') === true ) {
+    console.log('etipia is in the array');
+    } else {
+    webTechs.push('Sass');
+    console.log(webTechs);
+    }
 // Concatenate the following two variables and store it in a fullStack variable.
 
-// const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
-// const backEnd = ['Node','Express', 'MongoDB']
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
 
+let fullStack = 
 // console.log(fullStack)
 // ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
 // Exercise: Level 3

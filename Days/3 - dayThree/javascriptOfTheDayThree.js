@@ -154,7 +154,17 @@ function q_3 (){
 // Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
 
 // Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
-
+let hoursOfWork;
+let ratePerHour;
+let intHours;
+let intRate;
+function q20 () {
+hoursOfWork = prompt('entrez votre nombre d\'heure');
+ratePerHour = prompt(`entrez vos nombre d'heure`);
+intHours = parseInt(hoursOfWork);
+intRate = parseInt(ratePerHour);
+    console.log(intHours * intRate);
+}
 // Enter hours: 40
 // Enter rate per hour: 28
 // Your weekly earning is 1120
