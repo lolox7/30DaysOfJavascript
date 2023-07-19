@@ -228,13 +228,15 @@ if (countries.includes('Sass') === true ) {
 const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 const backEnd = ['Node','Express', 'MongoDB']
 
-let fullStack = 
+let fullStack = frontEnd.concat(backEnd);
+console.log(fullStack);
 // console.log(fullStack)
 // ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
 // Exercise: Level 3
 // The following is an array of 10 students ages:
 
-// const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
 // Sort the array and find the min and max age
 // Find the median age(one middle item or two middle items divided by two)
 // Find the average age(all items divided by number of items)
