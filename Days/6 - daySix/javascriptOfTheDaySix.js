@@ -140,40 +140,84 @@ for(let i = 0;i < 101;i++){
         somme= somme + i ;
     }
 }
-console.log(`la smmedes nombres pairs est ${somme}`);
-somme = 0;
+
+let sommeEven = 0
+sommeEven = 0;
 for(let i = 0;i < 101;i++){
     if (i %2 !== 0){
         console.log(i);
-        somme= somme + i ;
+        sommeEven= sommeEven + i ;
     }
 }
-console.log(`la smmedes nombres pairs est ${somme}`);
+console.log(`la smmedes nombres pairs est ${sommeEven}`);
 
 // The sum of all evens from 0 to 100 is 2550. And the sum of all odds from 0 to 100 is 2500.
-// Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
+
+let sommeOdd = 0;
 for(let i = 0;i < 101;i++){
     if (i %2 === 0){
         console.log(i);
-        somme= somme + i ;
+        sommeOdd= sommeOdd + i ;
     }
 }
-console.log(`la smmedes nombres pairs est ${somme}`);
+console.log(`la smmedes nombres pairs est ${sommeOdd}`);
+
+let sommeDysplayArray =[];
+sommeDysplayArray.push(sommeEven);
+sommeDysplayArray.push(sommeOdd);
+console.log(sommeDysplayArray.sort());
+
+// Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
 //   [2550, 2500]
 // Develop a small script which generate array of 5 random numbers
-
+console.log(Math.ceil(Math.random() * 100000));
 // Develop a small script which generate array of 5 random numbers and the numbers must be unique
+// let arrayOfFive = Array(5);
+// console.log(arrayOfFive)
+// for (let i = 1; i < arrayOfFive.length; i++) {
+//     if (arrayOfFive[i] !== arrayOfFive[i-1]){
+//         i++
+//     } else {
+//         arrayOfFive[i] = Math.floor(Math.random() * 10)
+//     }
+// }
+// console.log(arrayOfFive.sort());
+// let arr = [];
+// while(arr.length < 5){
+//     let r = Math.floor(Math.random() * 10);
+//     if(arr.indexOf(r) === -1) arr.push(r);
+// }
+// console.log(arr);
+// //develop a small script which generate a six characters random id:
+// let array6ASCII =[];
+// for (let i = 0; i < 7; i++){
+//     array6ASCII.unshift(Math.ceil(32 + Math.random()*95))
+// }
+// let id6 ='';
+// for(let i = 0; i < 7; i++){
+// id6 = id6 + String.fromCharCode(array6ASCII[i])
+// }
 
-// Develop a small script which generate a six characters random id:
-
+// console.log(id6);
 // 5j2khz
 // Exercises: Level 2
 // Develop a small script which generate any number of characters random id:
-
+// let arrayRandomASCII = [];
+// for (let i = 0; i < Math.floor(50 +Math.random() * 100 ); i++){
+//     arrayRandomASCII.unshift(Math.ceil(32 + Math.random()*95))
+// }
+// let randomId = 'l';
+// for(let i = 0; i < arrayRandomASCII.length; i++){
+// randomId = randomId + String.fromCharCode(arrayRandomASCII[i])
+// }
+// console.log(arrayRandomASCII)
+// console.log(randomId);
 //   fe3jo1gl124g
 //   xkqci4utda1lmbelpkm03rba
 // Write a script which generates a random hexadecimal number.
-
+let hexadecimal = Math.floor(Math.random*100);
+hexadecimal = hexadecimal.toString(16)
+console.log(hexadecimal)
 // '#ee33df'
 // Write a script which generates a random rgb color number.
 
