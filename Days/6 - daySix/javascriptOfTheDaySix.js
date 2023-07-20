@@ -126,13 +126,39 @@
 
 
 // Use for loop to iterate from 0 to 100 and print the sum of all numbers.
-
+let somme = 0;
+for(let i = 0;i <101; i++){
+    somme = somme + i;
+}
+console.log(somme);
+somme = 0
 // The sum of all numbers from 0 to 100 is 5050.
 // Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+for(let i = 0;i < 101;i++){
+    if (i %2 === 0){
+        console.log(i);
+        somme= somme + i ;
+    }
+}
+console.log(`la smmedes nombres pairs est ${somme}`);
+somme = 0;
+for(let i = 0;i < 101;i++){
+    if (i %2 !== 0){
+        console.log(i);
+        somme= somme + i ;
+    }
+}
+console.log(`la smmedes nombres pairs est ${somme}`);
 
 // The sum of all evens from 0 to 100 is 2550. And the sum of all odds from 0 to 100 is 2500.
 // Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
-
+for(let i = 0;i < 101;i++){
+    if (i %2 === 0){
+        console.log(i);
+        somme= somme + i ;
+    }
+}
+console.log(`la smmedes nombres pairs est ${somme}`);
 //   [2550, 2500]
 // Develop a small script which generate array of 5 random numbers
 
